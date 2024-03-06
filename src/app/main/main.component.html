@@ -1,0 +1,52 @@
+<hr style="color: transparent;">
+
+<hr style="color: transparent;">
+
+<div class="card">
+
+    <div class="main"> 
+        <div class="display"> 
+            <button class="dark_mode_btn">
+                <i class="fa fa-moon-o" aria-hidden="true"></i>
+            </button> 
+
+            <p id="history">
+                <div class="form-group col-sm-6 flex-column d-flex"> 
+                    <form action="" [formGroup]="input">
+                        <input style="width: 250px; margin-top: 20px;margin-left: 10px;" type="text" name="" id="" class="form-control form-control-lg"  formControlName="text">
+                    </form> 
+                </div>
+
+                <h2 id="result"></h2> </div> <div class="buttons"> 
+                    <button (click)="clear()" id="clear">C</button> 
+                
+                    <button (click)="setOperator($event.target)" id="Normal_btn">/</button> 
+                    <button (click)="setOperator($event.target)" id="Normal_btn">*</button> 
+                </div> 
+                
+                <div class="buttons"> 
+                    <button (click)="buttonClick($event.target)" id="Normal_btn">7</button> 
+                    <button (click)="buttonClick($event.target)" id="Normal_btn">8</button> 
+                    <button (click)="buttonClick($event.target)" id="Normal_btn">9</button> 
+                    <button (click)="setOperator($event.target)" id="Normal_btn">-</button> 
+                </div> 
+                <div class="buttons"> 
+                    <button (click)="buttonClick($event.target)"id="Normal_btn">4</button> 
+                    <button (click)="buttonClick($event.target)" id="Normal_btn">5</button> 
+                    <button (click)="buttonClick($event.target)" id="Normal_btn">6</button> 
+                    <button (click)="setOperator($event.target)" id="Normal_btn">+</button> 
+                </div> 
+                <div class="buttons"> 
+                    <button (click)="buttonClick($event.target)" id="Normal_btn">1</button> 
+                    <button (click)="buttonClick($event.target)"  id="Normal_btn">2</button> 
+                    <button (click)="buttonClick($event.target)" id="Normal_btn">3</button> 
+                    <button (click)="putPoint()" id="Normal_btn">.</button> 
+                </div> 
+                <div class="buttons"> 
+                    <button  (click)="buttonClick($event.target)" id="Normal_btn">0</button> 
+                    <button (click)="calculate()" id="equalTo">=</button> 
+                </div> 
+    </div> 
+</div>
+
+
